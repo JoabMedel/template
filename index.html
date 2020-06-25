@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cards-dashboard-default.css">
+    <link rel="stylesheet" href="menusuperior.css">
+    <link rel="stylesheet" href="menulateral.css">
+    <link rel="stylesheet" href="css-circular-prog-bar.css">
+    <link rel="stylesheet" href="circular-progress-white.css">
+    <link href='calendar/core/main.css' rel='stylesheet' />
+    <link href='calendar/daygrid/main.css' rel='stylesheet' />
+    <script src='calendar/core/main.js'></script>
+    <script src='calendar/daygrid/main.js'></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+          var calendarEl = document.getElementById('calendar');
+  
+          var calendar = new FullCalendar.Calendar(calendarEl, {
+            plugins: [ 'dayGrid' ]
+          });
+  
+          calendar.render();
+        });
+
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;900&display=swap');
+    </style>
+</head>
+<body>
+    <!-- menu superior -->
+    <section class="menusuperior">
+        <div>menusuperior</div>
+    </section>
+    <section class="flexbox">
+        <!-- menulateral -->
+        <section class="menulateral">
+            <div class="fixed">barralateral</div>
+        </section>
+        <section class="submenulateral">
+            <div class="fixed">subbarralateral</div>
+        </section>
+        <!-- inicio cards dashboards-default -->
+        <section class="margencontenidocards"> 
+            <!-- box tittle -->
+            <nav class="flexbox">
+                <div class="head">ls</div>
+            </nav>
+            <!-- componente 01 -->
+            <nav class="flexbox">
+                <div class="comp_01-03">
+                    <div class="flexboxspace">
+                        <div class="comp01">
+                            <svg class="bi bi-alarm" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M8 15A6 6 0 1 0 8 3a6 6 0 0 0 0 12zm0 1A7 7 0 1 0 8 2a7 7 0 0 0 0 14z"/>
+                                <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.053.224l-1.5 3a.5.5 0 1 1-.894-.448L7.5 8.882V5a.5.5 0 0 1 .5-.5z"/>
+                                <path d="M.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.035 8.035 0 0 0 .86 5.387zM11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.035 8.035 0 0 0-3.527-3.527z"/>
+                                <path fill-rule="evenodd" d="M11.646 14.146a.5.5 0 0 1 .708 0l1 1a.5.5 0 0 1-.708.708l-1-1a.5.5 0 0 1 0-.708zm-7.292 0a.5.5 0 0 0-.708 0l-1 1a.5.5 0 0 0 .708.708l1-1a.5.5 0 0 0 0-.708zM5.5.5A.5.5 0 0 1 6 0h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
+                                <path d="M7 1h2v2H7V1z"/>
+                            </svg>
+                            <br>
+                            <br>
+                            <p class="othercolorcomp01">Pending Orders</p>
+                            <p class="fontsizecomp01">14</p>
+                        </div>
+                        <div class="comp01">
+                            <svg class="bi bi-bag-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 4h14v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm7-2.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z"/>
+                            </svg>
+                            <br>
+                            <br>
+                            <p class="othercolorcomp01">Complete Orders</p>
+                            <p class="fontsizecomp01">32</p>
+                        </div>
+                        <div class="comp01">
+                            <svg class="bi bi-arrow-clockwise" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M3.17 6.706a5 5 0 0 1 7.103-3.16.5.5 0 1 0 .454-.892A6 6 0 1 0 13.455 5.5a.5.5 0 0 0-.91.417 5 5 0 1 1-9.375.789z"/>
+                                <path fill-rule="evenodd" d="M8.147.146a.5.5 0 0 1 .707 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 1 1-.707-.708L10.293 3 8.147.854a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                            <br>
+                            <br>
+                            <p class="othercolorcomp01">Refund Requests</p>
+                            <p class="fontsizecomp01">74</p>
+                        </div>
+                        <div class="comp01">
+                            <svg class="bi bi-envelope-open-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.313l6.709 3.933L8 8.928l1.291.717L16 5.715V5.4a2 2 0 0 0-1.059-1.765l-6-3.2zM16 6.873l-5.693 3.337L16 13.372v-6.5zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516zM0 13.373l5.693-3.163L0 6.873v6.5z"/>
+                            </svg>
+                            <br>
+                            <br>
+                            <p class="othercolorcomp01">New Coments</p>
+                            <p class="fontsizecomp01">25</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="comp03">ls</div>
+                    </div>
+                </div>
+                <!-- componente 02 -->
+                <div class="comp02">
+                    <div class="flexboxspace">
+                        <div>
+                            Recent Orders
+                        </div>
+                        <div>
+                            <svg class="bi bi-arrow-clockwise" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M3.17 6.706a5 5 0 0 1 7.103-3.16.5.5 0 1 0 .454-.892A6 6 0 1 0 13.455 5.5a.5.5 0 0 0-.91.417 5 5 0 1 1-9.375.789z"/>
+                                <path fill-rule="evenodd" d="M8.147.146a.5.5 0 0 1 .707 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 1 1-.707-.708L10.293 3 8.147.854a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="margintop scroll">
+                        <div class="flexbox">
+                            <div>
+                                <img src="https://vien-angular.coloredstrategies.com/assets/img/marble-cake-thumb.jpg" alt="O" width="113px" height="80px" class="borderradiusmin">
+                            </div>
+                            <div class="margintextmin">
+                                <p>Marble Cake</p>
+                                <p class="exsmallfont colorgrey">Wedding Cake with flowers Macarons and blueberries</p>
+                                <p class="smallfont colorblue">02.04.2018</p>
+                            </div>
+                        </div>
+                        <div class="flexbox">
+                            <div>
+                                <img src="https://vien-angular.coloredstrategies.com/assets/img/marble-cake-thumb.jpg" alt="O" width="113px" height="80px" class="borderradiusmin">
+                            </div>
+                            <div class="margintextmin">
+                                <p>Marble Cake</p>
+                                <p class="exsmallfont colorgrey">Wedding Cake with flowers Macarons and blueberries</p>
+                                <p class="smallfont colorblue">02.04.2018</p>
+                            </div>
+                        </div>
+                        <div class="flexbox">
+                            <div>
+                                <img src="https://vien-angular.coloredstrategies.com/assets/img/marble-cake-thumb.jpg" alt="O" width="113px" height="80px" class="borderradiusmin">
+                            </div>
+                            <div class="margintextmin">
+                                <p>Marble Cake</p>
+                                <p class="exsmallfont colorgrey">Wedding Cake with flowers Macarons and blueberries</p>
+                                <p class="smallfont colorblue">02.04.2018</p>
+                            </div>
+                        </div>
+                        <div class="flexbox">
+                            <div>
+                                <img src="https://vien-angular.coloredstrategies.com/assets/img/marble-cake-thumb.jpg" alt="O" width="113px" height="80px" class="borderradiusmin">
+                            </div>
+                            <div class="margintextmin">
+                                <p>Marble Cake</p>
+                                <p class="exsmallfont colorgrey">Wedding Cake with flowers Macarons and blueberries</p>
+                                <p class="smallfont colorblue">02.04.2018</p>
+                            </div>
+                        </div>
+                        <div class="flexbox">
+                            <div>
+                                <img src="https://vien-angular.coloredstrategies.com/assets/img/marble-cake-thumb.jpg" alt="O" width="113px" height="80px" class="borderradiusmin">
+                            </div>
+                            <div class="margintextmin">
+                                <p>Marble Cake</p>
+                                <p class="exsmallfont colorgrey">Wedding Cake with flowers Macarons and blueberries</p>
+                                <p class="smallfont colorblue">02.04.2018</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- componente 04 -->
+            <nav class="flexbox">
+                <div class="comp04">ls</div>
+                <div class="comp04">
+                    <div class="titlefont">
+                        Logs
+                    </div>
+                    <div class="margintop scroll">
+                        <div class="flexbox margintop">
+                        <div class="colorblue">
+                            <svg class="bi bi-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            </svg>
+                        </div> 
+                        <div class="margintextmin">
+                            New user registiration
+                        </div>
+                        <div class="colorgrey marginend">
+                            14:12
+                        </div>
+                        </div>
+                        <div class="flexbox margintop">
+                            <div class="colorblue">
+                            <svg class="bi bi-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            </svg>
+                            </div> 
+                            <div class="margintextmin">
+                            New user registiration
+                            </div>
+                            <div class="colorgrey marginend">
+                            14:12
+                            </div>
+                        </div>
+                        <div class="flexbox margintop">
+                            <div class="colorblue">
+                            <svg class="bi bi-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            </svg>
+                            </div> 
+                            <div class="margintextmin">
+                            New user registiration
+                            </div>
+                            <div class="colorgrey marginend">
+                            14:12
+                            </div>
+                        </div>
+                        <div class="flexbox margintop">
+                            <div class="colorblue">
+                            <svg class="bi bi-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            </svg>
+                            </div> 
+                            <div class="margintextmin">
+                            New user registiration
+                            </div>
+                            <div class="colorgrey marginend">
+                            14:12
+                            </div>
+                        </div>
+                        <div class="flexbox margintop">
+                            <div class="colorblue">
+                            <svg class="bi bi-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            </svg>
+                            </div> 
+                            <div class="margintextmin">
+                            New user registiration
+                            </div>
+                            <div class="colorgrey marginend">
+                            14:12
+                            </div>
+                        </div>
+                        <div class="flexbox margintop">
+                            <div class="colorblue">
+                            <svg class="bi bi-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            </svg>
+                            </div> 
+                            <div class="margintextmin">
+                            New user registiration
+                            </div>
+                            <div class="colorgrey marginend">
+                            14:12
+                            </div>
+                        </div>
+                        <div class="flexbox margintop">
+                            <div class="colorblue">
+                            <svg class="bi bi-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            </svg>
+                            </div> 
+                            <div class="margintextmin">
+                            New user registiration
+                            </div>
+                            <div class="colorgrey marginend">
+                            14:12
+                            </div>
+                        </div>
+                        <div class="flexbox margintop">
+                            <div class="colorblue">
+                            <svg class="bi bi-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            </svg>
+                            </div> 
+                            <div class="margintextmin">
+                            New user registiration
+                            </div>
+                            <div class="colorgrey marginend">
+                            14:12
+                            </div>
+                        </div>
+                        <div class="flexbox margintop">
+                            <div class="colorblue">
+                            <svg class="bi bi-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            </svg>
+                            </div> 
+                            <div class="margintextmin">
+                            New user registiration
+                            </div>
+                            <div class="colorgrey marginend">
+                            14:12
+                            </div>
+                        </div>
+                        <div class="flexbox margintop">
+                            <div class="colorblue">
+                            <svg class="bi bi-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            </svg>
+                            </div> 
+                            <div class="margintextmin">
+                            New user registiration
+                            </div>
+                            <div class="colorgrey marginend">
+                            14:12
+                            </div>
+                        </div>
+                        <div class="flexbox margintop">
+                            <div class="colorblue">
+                            <svg class="bi bi-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            </svg>
+                            </div> 
+                            <div class="margintextmin">
+                            New user registiration
+                            </div>
+                            <div class="colorgrey marginend">
+                            14:12
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp_04">
+                    <div class="tittlefont">
+                        Tickets
+                    </div>
+                    <div class="margintop scroll">
+                        <div class="flexbox margintop">
+                            <div>
+                                <img src="https://vien-angular.coloredstrategies.com/assets/img/profile-pic-l.jpg" alt="la" width="40px" height="40px" class="iconcircle">
+                            </div>
+                            <div class="margintextmin">
+                                <p>Mayra Sibley</p>
+                                <p class="exsmallfont colorgrey">09-08-2018-12:45</p>
+                            </div>
+                        </div>
+                        <div class="flexbox margintop">
+                            <div>
+                                <img src="https://vien-angular.coloredstrategies.com/assets/img/profile-pic-l.jpg" alt="la" width="40px" height="40px" class="iconcircle">
+                            </div>
+                            <div class="margintextmin">
+                                <p>Mayra Sibley</p>
+                                <p class="exsmallfont colorgrey">09-08-2018-12:45</p>
+                            </div>
+                        </div>
+                        <div class="flexbox margintop">
+                            <div>
+                                <img src="https://vien-angular.coloredstrategies.com/assets/img/profile-pic-l.jpg" alt="la" width="40px" height="40px" class="iconcircle">
+                            </div>
+                            <div class="margintextmin">
+                                <p>Mayra Sibley</p>
+                                <p class="exsmallfont colorgrey">09-08-2018-12:45</p>
+                            </div>
+                        </div>
+                        <div class="flexbox margintop">
+                            <div>
+                                <img src="https://vien-angular.coloredstrategies.com/assets/img/profile-pic-l.jpg" alt="la" width="40px" height="40px" class="iconcircle">
+                            </div>
+                            <div class="margintextmin">
+                                <p>Mayra Sibley</p>
+                                <p class="exsmallfont colorgrey">09-08-2018-12:45</p>
+                            </div>
+                        </div>
+                        <div class="flexbox margintop">
+                            <div>
+                                <img src="https://vien-angular.coloredstrategies.com/assets/img/profile-pic-l.jpg" alt="la" width="40px" height="40px" class="iconcircle">
+                            </div>
+                            <div class="margintextmin">
+                                <p>Mayra Sibley</p>
+                                <p class="exsmallfont colorgrey">09-08-2018-12:45</p>
+                            </div>
+                        </div>
+                        <div class="flexbox margintop">
+                            <div>
+                                <img src="https://vien-angular.coloredstrategies.com/assets/img/profile-pic-l.jpg" alt="la" width="40px" height="40px" class="iconcircle">
+                            </div>
+                            <div class="margintextmin">
+                                <p>Mayra Sibley</p>
+                                <p class="exsmallfont colorgrey">09-08-2018-12:45</p>
+                            </div>
+                        </div>
+                        <div class="flexbox margintop">
+                            <div>
+                                <img src="https://vien-angular.coloredstrategies.com/assets/img/profile-pic-l.jpg" alt="la" width="40px" height="40px" class="iconcircle">
+                            </div>
+                            <div class="margintextmin">
+                                <p>Mayra Sibley</p>
+                                <p class="exsmallfont colorgrey">09-08-2018-12:45</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- componente 05 -->
+            <nav class="flexbox">
+                <div class="comp05">
+                    <div id='calendar'></div>
+                </div>
+                <div class="comp_05">
+                    <div class="titlefont">
+                        Best Sellers
+                    </div>
+                    <div class="scroll">
+                    <div class="margintop">
+                        <div class="flexbox">
+                            <div class="marginlarright bolder">
+                                Title
+                            </div>
+                            <div>
+                                <svg class="bi bi-arrow-down-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M11 3.5a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
+                                    <path fill-rule="evenodd" d="M10.646 2.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L11 3.707 8.354 6.354a.5.5 0 1 1-.708-.708l3-3zm-9 7a.5.5 0 0 1 .708 0L5 12.293l2.646-2.647a.5.5 0 1 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 0-.708z"/>
+                                    <path fill-rule="evenodd" d="M5 2.5a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-1 0V3a.5.5 0 0 1 .5-.5z"/>
+                                </svg>
+                                <span class="bolder">Sales</span>
+                            </div>
+                            <div class="marginmidleft">
+                                <svg class="bi bi-arrow-down-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M11 3.5a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
+                                    <path fill-rule="evenodd" d="M10.646 2.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L11 3.707 8.354 6.354a.5.5 0 1 1-.708-.708l3-3zm-9 7a.5.5 0 0 1 .708 0L5 12.293l2.646-2.647a.5.5 0 1 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 0-.708z"/>
+                                    <path fill-rule="evenodd" d="M5 2.5a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-1 0V3a.5.5 0 0 1 .5-.5z"/>
+                                </svg>
+                                <span class="bolder">Stock</span>
+                            </div>
+                            <div class="marginmidleft">
+                                <svg class="bi bi-arrow-down-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M11 3.5a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
+                                    <path fill-rule="evenodd" d="M10.646 2.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L11 3.707 8.354 6.354a.5.5 0 1 1-.708-.708l3-3zm-9 7a.5.5 0 0 1 .708 0L5 12.293l2.646-2.647a.5.5 0 1 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 0-.708z"/>
+                                    <path fill-rule="evenodd" d="M5 2.5a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-1 0V3a.5.5 0 0 1 .5-.5z"/>
+                                </svg>
+                                <span class="bolder">Category</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margintoplarge">
+                        <div class="flexbox">
+                            <div class="marginlarright02">
+                                Title
+                            </div>
+                            <div>
+                                <span>Sales</span>
+                            </div>
+                            <div class="marginmidleft02">
+                                <span>Stock</span>
+                            </div>
+                            <div class="marginmidleft02">
+                                <span>Category</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margintoplarge">
+                        <div class="flexbox">
+                            <div class="marginlarright02">
+                                Title
+                            </div>
+                            <div>
+                                <span>Sales</span>
+                            </div>
+                            <div class="marginmidleft02">
+                                <span>Stock</span>
+                            </div>
+                            <div class="marginmidleft02">
+                                <span>Category</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margintoplarge">
+                        <div class="flexbox">
+                            <div class="marginlarright02">
+                                Title
+                            </div>
+                            <div>
+                                <span>Sales</span>
+                            </div>
+                            <div class="marginmidleft02">
+                                <span>Stock</span>
+                            </div>
+                            <div class="marginmidleft02">
+                                <span>Category</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margintoplarge">
+                        <div class="flexbox">
+                            <div class="marginlarright02">
+                                Title
+                            </div>
+                            <div>
+                                <span>Sales</span>
+                            </div>
+                            <div class="marginmidleft02">
+                                <span>Stock</span>
+                            </div>
+                            <div class="marginmidleft02">
+                                <span>Category</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margintoplarge">
+                        <div class="flexbox">
+                            <div class="marginlarright02">
+                                Title
+                            </div>
+                            <div>
+                                <span>Sales</span>
+                            </div>
+                            <div class="marginmidleft02">
+                                <span>Stock</span>
+                            </div>
+                            <div class="marginmidleft02">
+                                <span>Category</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margintoplarge">
+                        <div class="flexbox">
+                            <div class="marginlarright02">
+                                Title
+                            </div>
+                            <div>
+                                <span>Sales</span>
+                            </div>
+                            <div class="marginmidleft02">
+                                <span>Stock</span>
+                            </div>
+                            <div class="marginmidleft02">
+                                <span>Category</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margintoplarge">
+                        <div class="flexbox">
+                            <div class="marginlarright02">
+                                Title
+                            </div>
+                            <div>
+                                <span>Sales</span>
+                            </div>
+                            <div class="marginmidleft02">
+                                <span>Stock</span>
+                            </div>
+                            <div class="marginmidleft02">
+                                <span>Category</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margintoplarge">
+                        <div class="flexbox">
+                            <div class="marginlarright02">
+                                Title
+                            </div>
+                            <div>
+                                <span>Sales</span>
+                            </div>
+                            <div class="marginmidleft02">
+                                <span>Stock</span>
+                            </div>
+                            <div class="marginmidleft02">
+                                <span>Category</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margintoplarge">
+                        <div class="flexbox">
+                            <div class="marginlarright02">
+                                Title
+                            </div>
+                            <div>
+                                <span>Sales</span>
+                            </div>
+                            <div class="marginmidleft02">
+                                <span>Stock</span>
+                            </div>
+                            <div class="marginmidleft02">
+                                <span>Category</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margintoplarge">
+                        <div class="flexbox">
+                            <div class="marginlarright02">
+                                Title
+                            </div>
+                            <div>
+                                <span>Sales</span>
+                            </div>
+                            <div class="marginmidleft02">
+                                <span>Stock</span>
+                            </div>
+                            <div class="marginmidleft02">
+                                <span>Category</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margintoplarge">
+                        <div class="flexbox">
+                            <div class="marginlarright02">
+                                Title
+                            </div>
+                            <div>
+                                <span>Sales</span>
+                            </div>
+                            <div class="marginmidleft02">
+                                <span>Stock</span>
+                            </div>
+                            <div class="marginmidleft02">
+                                <span>Category</span> 
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- componente 06 -->
+            <nav class="flexbox">
+                <div class="comp06">
+                    <div class="titlefont padding-mid">
+                        Profile Status
+                    </div>
+                    <div class="margin-top-normal padding-mid">
+                        <div class="smallfont margintop">
+                            <div class="flexboxspace">
+                                <div>Basic Information</div>
+                                <div class="colorgrey">12/18</div>
+                            </div>
+                            <div>
+                                <progress value="70" max="100"></progress>
+                            </div>
+                        </div>
+                        <div class="smallfont margintop">
+                            <div class="flexboxspace">
+                                <div>Portafolio</div>
+                                <div class="colorgrey">1/8</div>
+                            </div>
+                            <div>
+                                <progress value="15" max="100"></progress>
+                            </div>
+                        </div>
+                        <div class="smallfont margintop">
+                            <div class="flexboxspace"> 
+                                <div>Billing Details</div>
+                                <div class="colorgrey">2/6</div>
+                            </div>
+                            <div>
+                                <progress value="35" max="100"></progress>
+                            </div>
+                        </div>
+                        <div class="smallfont margintop">
+                            <div class="flexboxspace">
+                                <div>Interest</div>
+                                <div class="colorgrey">0/10</div>
+                            </div>
+                            <div>
+                                <progress value="0" max="100"></progress>
+                            </div>
+                        </div>
+                        <div class="smallfont margintop">
+                            <div class="flexboxspace">
+                                <div>Legal Documents</div>
+                                <div class="colorgrey">1/2</div>
+                            </div>
+                            <div>
+                                <progress value="50" max="100"></progress>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp-06 cursor-pointer">
+                    <div class="colorwhite margintopmax">
+                        <button class="styles-button-min exsmallfont colorwhite">VIEN</button>
+                        <div class="margintop largefont">MAGIC IS IN<br>THE DETAILS</div>
+                        <div class="margintop smallfont">yes is in the details!</div>
+                    </div>
+                </div>
+                <div class="comp_06">
+                    <div class="titlefont padding-mid">
+                        Cakes
+                    </div>
+                    <div class="flexbox margin-top-normal padding-mid">
+                        <div class="marginlarright">
+                            <p class="cursor-pointer hover-cakes-card">Marble Cake</p>
+                            <p class="cursor-pointer hover-cakes-card">Fruit Cake</p>
+                            <p class="cursor-pointer hover-cakes-card">Chocolate Cake</p>
+                            <p class="cursor-pointer hover-cakes-card">Fat Rascal</p>
+                            <p class="cursor-pointer hover-cakes-card">Financier</p>
+                            <p class="cursor-pointer hover-cakes-card">Genoise</p>
+                            <p class="cursor-pointer hover-cakes-card">Gingerbread</p>
+                            <p class="cursor-pointer hover-cakes-card">Goose Breast</p>
+                            <p class="cursor-pointer hover-cakes-card">Parkin</p>
+                            <p class="cursor-pointer hover-cakes-card">Salzburger Nockerl</p>
+                            <p class="cursor-pointer hover-cakes-card">SSouffle</p>
+                            <p class="cursor-pointer hover-cakes-card">Marveilleux</p>
+                        </div>
+                        <div>
+                            <p class="cursor-pointer hover-cakes-card">Streuselkuchen</p>
+                            <p class="cursor-pointer hover-cakes-card">Teat Loaf</p>
+                            <p class="cursor-pointer hover-cakes-card">Marveilleux</p>
+                            <p class="cursor-pointer hover-cakes-card">Magdalena</p>
+                            <p class="cursor-pointer hover-cakes-card">Cremeschnitte</p>
+                            <p class="cursor-pointer hover-cakes-card">Cheesecake</p>
+                            <p class="cursor-pointer hover-cakes-card">Bebinca</p>
+                            <p class="cursor-pointer hover-cakes-card">Salzburger Nockerl</p>
+                            <p class="cursor-pointer hover-cakes-card">Souffle</p>
+                            <p class="cursor-pointer hover-cakes-card">Merveilleux</p>
+                            <p class="cursor-pointer hover-cakes-card">Streuselkuchen</p>
+                            <p class="cursor-pointer hover-cakes-card">Cheesecake</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- componente 07 -->
+            <nav class="flexbox margin-right-gridcards">
+                <div class="comp07">
+                    <div class="padding-mid flexboxspace center-items">
+                        <div>
+                            <p class="titlefont block-display">Payment Status</p>
+                        </div>
+                        <div>
+                            <div class="progress-circle over50 p64">
+                                <span>64%</span>
+                                <div class="left-half-clipper">
+                                   <div class="first50-bar"></div>
+                                   <div class="value-bar"></div>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp07">
+                    <div class="padding-mid flexboxspace center-items">
+                        <div>
+                            <p class="titlefont block-display">Work Progress</p>
+                        </div>
+                        <div>
+                            <div class="progress-circle over50 p75">
+                                <span>75%</span>
+                                <div class="left-half-clipper">
+                                   <div class="first50-bar"></div>
+                                   <div class="value-bar"></div>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp07">
+                    <div class="padding-mid flexboxspace center-items">
+                        <div>
+                            <p class="titlefont block-display">Task Completed</p>
+                        </div>
+                        <div>
+                            <div class="progress-circle p32">
+                                <span>32%</span>
+                                <div class="left-half-clipper">
+                                   <div class="first50-bar"></div>
+                                   <div class="value-bar"></div>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp_07">
+                    <div class="padding-mid flexboxspace center-items">
+                        <div>
+                            <p class="titlefont block-display">Payments Done</p>
+                        </div>
+                        <div>
+                            <div class="progress-circle p45">
+                                <span>45%</span>
+                                <div class="left-half-clipper">
+                                   <div class="first50-bar"></div>
+                                   <div class="value-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- componente 08 -->
+            <nav class="flexbox">
+                <div class="comp08">ls</div>
+                <div class="comp_08">ls</div>
+            </nav>
+            <!-- componente 09 -->
+            <section class="flexbox">
+                <nav class="compghost09-10">
+                    <div class="comp09 flexboxspace center-items">
+                       <div class="colorwhite margin-left-blue-cards">
+                            <svg class="bi bi-alarm" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M8 15A6 6 0 1 0 8 3a6 6 0 0 0 0 12zm0 1A7 7 0 1 0 8 2a7 7 0 0 0 0 14z"/>
+                                <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.053.224l-1.5 3a.5.5 0 1 1-.894-.448L7.5 8.882V5a.5.5 0 0 1 .5-.5z"/>
+                                <path d="M.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.035 8.035 0 0 0 .86 5.387zM11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.035 8.035 0 0 0-3.527-3.527z"/>
+                                <path fill-rule="evenodd" d="M11.646 14.146a.5.5 0 0 1 .708 0l1 1a.5.5 0 0 1-.708.708l-1-1a.5.5 0 0 1 0-.708zm-7.292 0a.5.5 0 0 0-.708 0l-1 1a.5.5 0 0 0 .708.708l1-1a.5.5 0 0 0 0-.708zM5.5.5A.5.5 0 0 1 6 0h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
+                                <path d="M7 1h2v2H7V1z"/>
+                            </svg> 
+                            <br>
+                            <br>
+                            <p class="largefont">5 Files</p>
+                            <br>
+                            <p class="smallfont">Pending for print</p>
+                       </div> 
+                       <div>
+                            <div class="progress-circle2 p43a">
+                                <span>5/12</span>
+                                <div class="left-half-clipper2">
+                                    <div class="first50-bar2"></div>
+                                    <div class="value-bar2"></div>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="comp09 flexboxspace center-items">
+                        <div class="colorwhite margin-left-blue-cards">
+                            <svg class="bi bi-person" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M13 14s1 0 1-1-1-4-6-4-6 3-6 4 1 1 1 1h10zm-9.995-.944v-.002.002zM3.022 13h9.956a.274.274 0 0 0 .014-.002l.008-.002c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664a1.05 1.05 0 0 0 .022.004zm9.974.056v-.002.002zM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                              </svg>
+                            <br>
+                            <br>
+                            <p class="largefont">4 Orders</p>
+                            <br>
+                            <p class="smallfont">On approvai process</p>
+                       </div> 
+                       <div>
+                            <div class="progress-circle2 over502 p65a">
+                                <span>4/6</span>
+                                <div class="left-half-clipper2">
+                                    <div class="first50-bar2"></div>
+                                    <div class="value-bar2"></div>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="comp09 flexboxspace center-items">
+                        <div class="colorwhite margin-left-blue-cards">
+                            <svg class="bi bi-bell" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2z"/>
+                                <path fill-rule="evenodd" d="M8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                              </svg>
+                            <br>
+                            <br>
+                            <p class="largefont">8 Alerts</p>
+                            <br>
+                            <p class="smallfont">Wating for notice</p>
+                       </div> 
+                       <div>
+                            <div class="progress-circle2 over502 p80a">
+                                <span>8/10</span>
+                                <div class="left-half-clipper2">
+                                    <div class="first50-bar2"></div>
+                                    <div class="value-bar2"></div>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                </nav>
+                <!-- Este es para jesus, menu desplegable -->
+                <nav class="compghost09-10">
+                    <div class="comp10">esta es la tabla</div>
+                </nav>
+                <!-- componente 11 y 12 -->
+                <nav class="compghost11-12">
+                    <!-- componente 11 -->
+                    <div class="flexbox">
+                        <div class="fwidthcomp11">
+                            <div class="comp11">ls</div>
+                            <div class="comp11">ls</div>
+                        </div>
+                        <div class="fwidthcomp11">
+                            <div class="comp_11">ls</div>
+                            <div class="comp_11">ls</div>
+                        </div>
+                    </div>
+                    <!-- componente 12 -->
+                    <div>
+                        <div class="comp12">ls</div>
+                    </div>
+                </nav>
+            </section>
+        </section>
+    </section>
+</body>
+</html>
